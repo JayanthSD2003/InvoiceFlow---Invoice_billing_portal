@@ -6,11 +6,14 @@
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![VS Code](https://img.shields.io/badge/IDE-VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
---
+---
+
+**Supporting Tools**
 
 ![Made with Perplexity](https://img.shields.io/badge/Made%20with-Perplexity-black?style=for-the-badge&logo=perplexity&logoColor=white)
 ![Made with Antigravity](https://img.shields.io/badge/Made%20with-Antigravity-blueviolet?style=for-the-badge&logo=google&logoColor=white)
 
+---
 
 **InvoiceFlow** is a modern, high-performance billing portal designed specifically for freelancers, Kirana stores, and small businesses in India. It simplifies financial management with a premium UI and full compliance with Indian tax regulations.
 
@@ -101,6 +104,8 @@ This project represents the pinnacle of modern, AI-assisted software engineering
 
 *   **Thunder Client (API Testing Framework)**:
     Essential for the backend validation phase. Thunder Client was used within VS Code to rigorously test every API endpoint, ensuring that the PHP controllers handled session authentication, data isolation, and tax calculations with 100% accuracy before the frontend was even connected.    
+
+    **Supporting Tools and Software**
 
 *   **Perplexity AI (Compliance & Research Specialist)**:
     Served as the critical knowledge engine for the project. Perplexity provided deep research and up-to-date information on Indian GST regulations, HSN/SAC code requirements for freelancers, and mandatory invoicing standards. This allowed the team to build a product that is not just functional, but legally compliant for the 2026 tax landscape.
