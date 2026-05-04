@@ -1,4 +1,5 @@
 -- Invoice Billing Portal Database Schema
+-- Go to phpMyAdmin and create a database named invoice_billing_portal
 -- Created for Jayanth SD
 
 CREATE DATABASE IF NOT EXISTS invoice_billing_portal;
