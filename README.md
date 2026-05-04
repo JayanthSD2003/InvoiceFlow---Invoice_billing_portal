@@ -86,9 +86,14 @@
 ---
 
 ## 🛠️ Built By
-This project was designed and developed with the assistance of:
-- **Perplexity AI** (for Knowledge Transfer and Research)
-- **Antigravity (Google DeepMind)** (for Pair Programming and Execution)
+
+This project was a collaborative effort between human creativity and advanced AI, developed using a state-of-the-art tech stack:
+
+*   **[Jayanth SD](https://github.com/JayanthSD2003)**: Lead Developer & Visionary, responsible for the core architecture and UI/UX design.
+*   **VS Code**: The primary IDE used for rapid development and code orchestration.
+*   **Antigravity (Google DeepMind)**: The primary coding assistant that powered the pair-programming sessions, logic implementation, and system architecture.
+*   **Perplexity AI**: Utilized for deep research, knowledge transfer regarding Indian Tax Compliance (GST/HSN), and technical troubleshooting.
+
 
 ---
 
