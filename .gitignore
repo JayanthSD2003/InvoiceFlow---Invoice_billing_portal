@@ -1,0 +1,33 @@
+# Dependency directories
+node_modules/
+frontend/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Database
+# database/ (We might want to keep the SQL files)
+
+# Misc
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

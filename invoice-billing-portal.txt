@@ -1,0 +1,157 @@
+invoice-billing-portal/
+├── backend/
+|     ├── config/
+|     	└── database.php
+|     ├── controllers/
+|     	├── AuthController.php
+|     	├── ProfileController.php
+|     	├── ClientController.php
+|     	├── InvoiceController.php
+|     	└── DashboardController.php
+|     ├── middleware/
+|    	└── AuthMiddleware.php
+|     ├── models/
+|   	├── User.php
+|   	├── BusinessProfile.php
+|   	├── Client.php
+|   	├── Invoice.php
+|   	└── Payment.php
+|      ├── routes/
+|   	└── api.php
+└── index.php
+
+
+frontend/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── assets/
+│       ├── logo.svg
+│       └── illustrations/
+│
+├── src/
+│   ├── app/
+│   │   ├── App.jsx
+│   │   ├── routes.jsx
+│   │   └── providers/
+│   │       └── ThemeProvider.jsx
+│   │
+│   ├── layout/
+│   │   ├── AppLayout.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── Topbar.jsx
+│   │   ├── NavItem.jsx
+│   │   └── PageHeader.jsx
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── Button.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── Badge.jsx
+│   │   │   ├── Input.jsx
+│   │   │   ├── Select.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   ├── Drawer.jsx
+│   │   │   ├── Table.jsx
+│   │   │   ├── EmptyState.jsx
+│   │   │   ├── Skeleton.jsx
+│   │   │   └── Loader.jsx
+│   │   │
+│   │   └── shared/
+│   │       ├── SearchBox.jsx
+│   │       ├── ThemeToggle.jsx
+│   │       └── StatusBadge.jsx
+│   │
+│   ├── features/
+│   │   ├── auth/
+│   │   │   ├── pages/
+│   │   │   │   └── LoginPage.jsx
+│   │   │   ├── services/
+│   │   │   │   └── authService.js
+│   │   │   ├── hooks/
+│   │   │   │   └── useAuth.js
+│   │   │   └── components/
+│   │   │       └── LoginForm.jsx
+│   │   │
+│   │   ├── dashboard/
+│   │   │   ├── pages/
+│   │   │   │   └── DashboardPage.jsx
+│   │   │   ├── components/
+│   │   │   │   ├── KpiCard.jsx
+│   │   │   │   ├── CollectionsSnapshot.jsx
+│   │   │   │   ├── QuickActionsCard.jsx
+│   │   │   │   └── AttentionInvoicesTable.jsx
+│   │   │   └── services/
+│   │   │       └── dashboardService.js
+│   │   │
+│   │   ├── clients/
+│   │   │   ├── pages/
+│   │   │   │   └── ClientsPage.jsx
+│   │   │   ├── components/
+│   │   │   │   ├── ClientForm.jsx
+│   │   │   │   ├── ClientsTable.jsx
+│   │   │   │   └── ClientDetailsDrawer.jsx
+│   │   │   └── services/
+│   │   │       └── clientService.js
+│   │   │
+│   │   ├── invoices/
+│   │   │   ├── pages/
+│   │   │   │   ├── InvoicesPage.jsx
+│   │   │   │   └── InvoiceDetailsPage.jsx
+│   │   │   ├── components/
+│   │   │   │   ├── InvoiceForm.jsx
+│   │   │   │   ├── InvoiceItemsTable.jsx
+│   │   │   │   ├── InvoicesTable.jsx
+│   │   │   │   ├── InvoiceSummaryCard.jsx
+│   │   │   │   └── InvoiceStatusBadge.jsx
+│   │   │   └── services/
+│   │   │       └── invoiceService.js
+│   │   │
+│   │   ├── payments/
+│   │   │   ├── pages/
+│   │   │   │   └── PaymentsPage.jsx
+│   │   │   ├── components/
+│   │   │   │   ├── PaymentForm.jsx
+│   │   │   │   ├── PaymentsTable.jsx
+│   │   │   │   └── PaymentSummaryCard.jsx
+│   │   │   └── services/
+│   │   │       └── paymentService.js
+│   │   │
+│   │   └── settings/
+│   │       ├── pages/
+│   │       │   └── SettingsPage.jsx
+│   │       ├── components/
+│   │       │   └── BusinessProfileForm.jsx
+│   │       └── services/
+│   │           └── profileService.js
+│   │
+│   ├── services/
+│   │   ├── apiClient.js
+│   │   └── endpoints.js
+│   │
+│   ├── hooks/
+│   │   ├── useTheme.js
+│   │   ├── useDebounce.js
+│   │   └── useToggle.js
+│   │
+│   ├── utils/
+│   │   ├── formatINR.js
+│   │   ├── formatDate.js
+│   │   ├── getStatusClasses.js
+│   │   ├── invoiceHelpers.js
+│   │   └── constants.js
+│   │
+│   ├── styles/
+│   │   ├── index.css
+│   │   └── tailwind.css
+│   │
+│   ├── data/
+│   │   └── mockDashboardData.js
+│   │
+│   ├── main.jsx
+│   └── index.js
+│
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md

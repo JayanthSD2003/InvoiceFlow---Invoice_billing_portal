@@ -1,0 +1,61 @@
+Web Development
+
+
+
+
+1. Project Title: Small Business Invoice & Billing Portal (A Full Stack Web Development Project using React.js, PHP & MySQL)
+
+2. Synopsis: The Small Business Invoice & Billing Portal is a full stack web application designed to help freelancers and small business owners manage their billing and invoicing digitally. Many small businesses still rely on manual methods like spreadsheets or paper records to track payments, which leads to errors, missed follow-ups, and poor financial visibility.
+This portal solves that problem by providing a clean, easy-to-use web platform where users can register their business, manage a client database, create professional invoices with itemized line items, track payment statuses, and monitor their overall business finances through a real-time dashboard.
+
+The application is built using React.js on the frontend for a fast, dynamic single-page experience, PHP 8.x on the backend for a secure RESTful API, and MySQL as the relational database. The system supports multiple users, each with their own private data, secured through session-based authentication and bcrypt password hashing.
+
+3. Objectives
+Primary Objectives:
+
+Build a secure multi-user web application with registration and login functionality
+Develop a RESTful PHP backend API with full CRUD operations for clients and invoices
+Create a dynamic React.js single-page application (SPA) with protected routes
+Design and implement a normalized MySQL relational database with 5 tables
+Implement invoice management with dynamic line items and auto-calculated totals
+Build a real-time business dashboard showing revenue, pending, and overdue stats
+Enable payment tracking with automatic invoice status updates
+
+Secondary Objectives:
+
+Learn and apply React hooks — useState, useEffect, useContext
+Practice PHP PDO for secure parameterized database queries
+Understand RESTful API design and HTTP method routing
+Apply responsive UI design using Tailwind CSS
+Use Git for version control throughout the project
+
+4. Tools & Technologies
+Frontend - React.js v18, React Router DOM v6
+Styling - Tailwind CSS v3
+HTTP Client - Axios
+Backend - PHP 8.x
+Database - MySQL 8.x
+Local Server - XAMPP (Apache + MySQL)
+Runtime/Build - Node.js v20+ & npm
+Code Editor - Visual Studio Code
+API Testing - Thunder Client (VS Code extension)
+Version Control - Git & GitHub
+
+5. Expected Outcomes
+By the end of this project, the following outcomes are expected:
+
+Functional Web Application — A fully working Invoice & Billing Portal accessible via browser with all core features operational
+
+Secure Authentication — Users can register, log in, and log out securely with bcrypt-hashed passwords and session management
+
+Client Management — Users can add, view, and delete clients from a personal client database
+
+Invoice Generation — Users can create professional invoices with multiple line items, auto-calculated subtotals, tax, and grand totals
+
+Payment Tracking — Users can record payments against invoices and the system automatically marks invoices as Paid when fully settled
+
+Business Dashboard — A real-time summary showing total revenue, pending amount, overdue invoices, and total clients
+
+Responsive UI — A clean, mobile-friendly interface built with Tailwind CSS that works across devices
+
+Developer Skills — Hands-on experience with full stack development covering React, PHP, MySQL, REST APIs, and Git
