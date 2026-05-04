@@ -87,12 +87,20 @@
 
 ## 🛠️ Built By
 
-This project was a collaborative effort between human creativity and advanced AI, developed using a state-of-the-art tech stack:
+This project represents the pinnacle of modern, AI-assisted software engineering, blending human vision with cutting-edge artificial intelligence.
 
-*   **[Jayanth SD](https://github.com/JayanthSD2003)**: Lead Developer & Visionary, responsible for the core architecture and UI/UX design.
-*   **VS Code**: The primary IDE used for rapid development and code orchestration.
-*   **Antigravity (Google DeepMind)**: The primary coding assistant that powered the pair-programming sessions, logic implementation, and system architecture.
-*   **Perplexity AI**: Utilized for deep research, knowledge transfer regarding Indian Tax Compliance (GST/HSN), and technical troubleshooting.
+*   **[Jayanth SD](https://github.com/JayanthSD2003) (Lead Architect & Visionary)**:
+    Envisioned the core concept of a unified billing portal that scales from freelancers to small businesses. Jayanth directed the high-fidelity UI/UX design, defined the multi-business isolation logic, and oversaw the end-to-end integration of Indian tax compliance laws to ensure the product solves real-world problems for Indian entrepreneurs.
+
+*   **Visual Studio Code (Mission Control)**:
+    The backbone of the development workflow. VS Code provided the environment for rapid prototyping, real-time debugging, and code orchestration, enabling the seamless transition between the React frontend and PHP backend.
+
+*   **Antigravity by Google DeepMind (Expert Pair Programmer)**:
+    Acted as the primary coding intelligence throughout the development lifecycle. Antigravity was responsible for generating complex React state management systems, building robust PHP PDO models, implementing the "Numbers to Words" Indian numbering utility, and optimizing the application for professional A4 printing. It ensured that every line of code was performant, secure, and followed modern best practices.
+
+*   **Perplexity AI (Compliance & Research Specialist)**:
+    Served as the critical knowledge engine for the project. Perplexity provided deep research and up-to-date information on Indian GST regulations, HSN/SAC code requirements for freelancers, and mandatory invoicing standards. This allowed the team to build a product that is not just functional, but legally compliant for the 2026 tax landscape.
+
 
 
 ---
