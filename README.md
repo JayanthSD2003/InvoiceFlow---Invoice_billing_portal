@@ -10,6 +10,7 @@
 
 ### **Supporting Tools**
 
+![Tested with Thunder Client](https://img.shields.io/badge/Tested%20with-Thunder_Client-732cf5?style=for-the-badge&logo=thunder-client&logoColor=white)
 ![Made with Perplexity](https://img.shields.io/badge/Made%20with-Perplexity-black?style=for-the-badge&logo=perplexity&logoColor=white)
 ![Made with Antigravity](https://img.shields.io/badge/Made%20with-Antigravity-blueviolet?style=for-the-badge&logo=google&logoColor=white)
 
