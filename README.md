@@ -67,7 +67,20 @@
 
 ## 📸 Preview
 
-*(Add your screenshots here to WOW your users!)*
+### 🔐 Modern Login Experience
+![Login Screen](./screenshots/login.png)
+
+### 📊 Comprehensive Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### 👥 Client Directory
+![Clients](./screenshots/clients.png)
+
+### 🧾 Invoice Management
+![Invoices](./screenshots/invoices.png)
+
+### 💰 Payment Records & Tracking
+![Payments](./screenshots/payments.png)
 
 ---
 
