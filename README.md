@@ -83,7 +83,7 @@
 ### 💰 Payment Records & Tracking
 ![Payments](./screenshots/payments.png)
 
-### ⚙️ Workspace & App Settings
+### ⚙️ Workspace, App, Profile, and Business Profile Settings
 ![Settings](./screenshots/settings.png)
 
 ---
