@@ -65,7 +65,15 @@
 
 ## 🚀 API Testing & Validation
 
-During development, the backend was rigorously validated using **Thunder Client**. Every endpoint was tested for:
+During development, the backend was rigorously validated using **Thunder Client**. The testing suite covered the full CRUD lifecycle of the billing system:
+
+*   **`GET` (Data Retrieval)**: Fetching dynamic dashboards, workspace-specific client lists, and detailed invoice data for printing.
+*   **`POST` (Resource Creation)**: Creating new invoices with multiple line items, adding new clients to the directory, and processing user registration/login.
+*   **`PUT / PATCH` (Record Updates)**: Updating existing client profiles, modifying invoice details, and updating payment statuses.
+*   **`DELETE` (Record Removal)**: Safely removing draft invoices, deleting client records, and purging erroneous payment entries.
+*   **`FETCH` (Workspace Synchronization)**: Leveraging unified fetch requests to instantly switch application context when a user changes their active business profile.
+
+Every endpoint was tested for:
 *   **Authentication & Authorization**: Ensuring only logged-in users can access their own data.
 *   **Data Isolation**: Verifying that a user in "Business Profile A" cannot see or modify data in "Business Profile B".
 *   **Payload Accuracy**: Validating that tax calculations, subtotal summations, and "Number to Words" logic are 100% accurate before reaching the frontend.
