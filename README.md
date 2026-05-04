@@ -83,6 +83,9 @@
 ### 💰 Payment Records & Tracking
 ![Payments](./screenshots/payments.png)
 
+### ⚙️ Workspace & App Settings
+![Settings](./screenshots/settings.png)
+
 ---
 
 ## 🛠️ Built By
