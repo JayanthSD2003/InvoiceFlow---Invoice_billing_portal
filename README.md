@@ -45,30 +45,66 @@
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Architecture
 
-*   **Frontend**: React 19, Tailwind CSS (Vanilla for premium styling), React Router 7.
-*   **Backend**: Vanilla PHP (Object-Oriented with PDO), JWT/Session Authentication.
-*   **Database**: MySQL (Optimized relational schema).
-*   **Design**: Modern Dark/Light mode support with glassmorphic elements.
+### **Frontend: Modern UI/UX Layer**
+*   **React 19**: Leveraging the latest React features for efficient component rendering and state management.
+*   **Tailwind CSS**: Custom, utility-first styling used to create a premium, glassmorphic design system that supports both Light and Dark modes.
+*   **React Router 7**: Managing complex client-side routing, including protected routes and role-based access.
+*   **Lucide Icons**: Providing a consistent and sleek iconography throughout the application.
+
+### **Backend: Robust API Layer**
+*   **Vanilla PHP (OOP)**: A clean, object-oriented approach using PHP to handle API requests, business logic, and session-based authentication.
+*   **PDO (PHP Data Objects)**: Ensures secure, prepared SQL statements to prevent SQL injection and provide a reliable database interface.
+*   **Session Management**: Secure user sessions to isolate data between different business profiles.
+
+### **Database: Relational Data Model**
+*   **MySQL**: Optimized relational database structure designed to handle multi-tenant data isolation and complex invoicing relationships.
 
 ---
 
-## ⚙️ Installation & Setup
+## 🚀 API Testing & Validation
 
-### Prerequisites
-*   XAMPP / WAMP / MAMP (Apache & MySQL)
-*   Node.js (for frontend development)
+During development, the backend was rigorously validated using **Thunder Client**. Every endpoint was tested for:
+*   **Authentication & Authorization**: Ensuring only logged-in users can access their own data.
+*   **Data Isolation**: Verifying that a user in "Business Profile A" cannot see or modify data in "Business Profile B".
+*   **Payload Accuracy**: Validating that tax calculations, subtotal summations, and "Number to Words" logic are 100% accurate before reaching the frontend.
 
-### Backend Setup
-1.  Move the `backend` folder to your server root (e.g., `C:\xampp\htdocs\invoice-billing-portal`).
-2.  Import the database schema from `database/schema.sql` into your PHPMyAdmin.
-3.  Configure `backend/config/database.php` with your MySQL credentials.
+---
 
-### Frontend Setup
-1.  Navigate to the `frontend` directory.
-2.  Run `npm install` to install dependencies.
-3.  Run `npm start` to launch the development server.
+## ⚙️ Installation & Comprehensive Setup
+
+### **1. Database Setup (PHPMyAdmin)**
+1.  Open your XAMPP Control Panel and start **Apache** and **MySQL**.
+2.  Open your browser and navigate to `http://localhost/phpmyadmin`.
+3.  Click on the **"New"** tab in the left sidebar to create a new database.
+4.  Enter the name: **`invoice_billing_portal`** and click **Create**.
+5.  Select your new database, click the **"Import"** tab.
+6.  Choose the `database/schema.sql` file from this project and click **Go** at the bottom.
+
+### **2. Backend Configuration**
+1.  Move the project folder to your local server root (e.g., `C:\xampp\htdocs\invoice-billing-portal`).
+2.  Open `backend/config/database.php` and verify your MySQL credentials:
+    ```php
+    private $username = "root";
+    private $password = ""; // Default XAMPP password is empty
+    ```
+
+### **3. Frontend Setup (React App)**
+1.  Open your terminal and navigate to the `frontend` folder:
+    ```bash
+    cd frontend
+    ```
+2.  Install all necessary dependencies:
+    ```bash
+    npm install
+    ```
+3.  Launch the development server:
+    ```bash
+    npm start
+    ```
+4.  The application will automatically open at `http://localhost:3000`.
+
 
 ---
 
