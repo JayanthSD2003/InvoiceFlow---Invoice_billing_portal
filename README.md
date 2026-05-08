@@ -162,5 +162,19 @@ This project represents the pinnacle of modern, AI-assisted software engineering
 
 ---
 
+## 🛠️ Software Engineering Practices
+
+This project was developed following industry-standard methodologies to ensure scalability, security, and maintainability:
+
+*   **AI-Augmented Development (AI-AD)**: Pioneering an AI-first workflow using **Antigravity** for pair programming and **Perplexity AI** for deep domain research.
+*   **Agile & Iterative Methodology**: Development was broken down into logical sprints, ensuring a functional product at every stage.
+*   **Separation of Concerns (SoC)**: A clean architectural split between the **React Frontend** and **PHP/PDO Backend** to ensure modularity.
+*   **API-First Validation**: Every backend endpoint was rigorously tested with **Thunder Client** for security and logic accuracy before frontend integration.
+*   **Domain-Driven Design (DDD)**: The system was architected specifically around the nuances of **Indian Tax Compliance**, ensuring it solves real-world local accounting problems.
+*   **Version Control Excellence**: A disciplined **Git Workflow** was maintained throughout the project to ensure a clean commit history and seamless collaboration.
+
+---
+
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
