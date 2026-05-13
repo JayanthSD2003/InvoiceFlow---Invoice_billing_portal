@@ -59,3 +59,6 @@ Business Dashboard — A real-time summary showing total revenue, pending amount
 Responsive UI — A clean, mobile-friendly interface built with Tailwind CSS that works across devices
 
 Developer Skills — Hands-on experience with full stack development covering React, PHP, MySQL, REST APIs, and Git
+
+
+Phase 2 version 2 coming soon........
