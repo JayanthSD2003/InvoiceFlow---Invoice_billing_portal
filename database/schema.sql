@@ -9,9 +9,10 @@ USE invoice_billing_portal;
 -- 1. Users Table
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL UNIQUE,
+    full_name VARCHAR(255) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
+    phone VARCHAR(20),
+    password_hash VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -19,10 +20,10 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE TABLE IF NOT EXISTS business_profiles (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
-    business_name VARCHAR(255) NOT NULL,
+    profile_name VARCHAR(255) NOT NULL,
     owner_name VARCHAR(255),
-    email VARCHAR(100),
-    phone VARCHAR(20),
+    business_email VARCHAR(100),
+    business_phone VARCHAR(20),
     address TEXT,
     tax_number VARCHAR(50), -- GSTIN
     pan_number VARCHAR(20),
@@ -43,6 +44,7 @@ CREATE TABLE IF NOT EXISTS clients (
     address TEXT,
     city VARCHAR(100),
     state VARCHAR(100),
+    country VARCHAR(100),
     postal_code VARCHAR(20),
     notes TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -78,8 +80,7 @@ CREATE TABLE IF NOT EXISTS invoice_items (
     quantity DECIMAL(12, 2) DEFAULT 1.00,
     unit_price DECIMAL(15, 2) NOT NULL,
     tax_percent DECIMAL(5, 2) DEFAULT 0.00,
-    tax_amount DECIMAL(15, 2) DEFAULT 0.00,
-    total_amount DECIMAL(15, 2) NOT NULL,
+    line_total DECIMAL(15, 2) NOT NULL,
     FOREIGN KEY (invoice_id) REFERENCES invoices(id) ON DELETE CASCADE
 );
 
@@ -90,10 +91,7 @@ CREATE TABLE IF NOT EXISTS payments (
     amount_paid DECIMAL(15, 2) NOT NULL,
     payment_date DATE NOT NULL,
     payment_method VARCHAR(50), -- Cash, Bank Transfer, UPI, etc.
-    reference_number VARCHAR(100),
+    reference_note VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (invoice_id) REFERENCES invoices(id) ON DELETE CASCADE
 );
-
--- Default User for testing (password: password123)
--- INSERT INTO users (username, email, password) VALUES ('demo', 'demo@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');

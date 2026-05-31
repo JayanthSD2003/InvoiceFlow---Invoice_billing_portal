@@ -34,6 +34,25 @@ class AuthMiddleware {
             self::sendJson(401, false, "Unauthorized. Please log in first.", null);
         }
 
+        // Verify that the user still exists in the database
+        require_once __DIR__ . '/../config/database.php';
+        require_once __DIR__ . '/../models/User.php';
+        
+        try {
+            $database = new Database();
+            $db = $database->connect();
+            $userModel = new User($db);
+            
+            if (!$userModel->findById((int) $_SESSION['user_id'])) {
+                // User was deleted or database cleared, destroy session
+                session_unset();
+                session_destroy();
+                self::sendJson(401, false, "Session expired or user not found. Please log in again.", null);
+            }
+        } catch (Exception $e) {
+            // Fallback: If database connection fails, let the controller handle it
+        }
+
         return $_SESSION['user_id'];
     }
 
@@ -41,7 +60,25 @@ class AuthMiddleware {
         self::startSession();
 
         if (isset($_SESSION['user_id'])) {
-            self::sendJson(409, false, "You are already logged in.", null);
+            // Verify that the user still exists in the database
+            require_once __DIR__ . '/../config/database.php';
+            require_once __DIR__ . '/../models/User.php';
+            
+            try {
+                $database = new Database();
+                $db = $database->connect();
+                $userModel = new User($db);
+                
+                if ($userModel->findById((int) $_SESSION['user_id'])) {
+                    self::sendJson(409, false, "You are already logged in.", null);
+                } else {
+                    // Stale session, destroy it so the guest request can proceed
+                    session_unset();
+                    session_destroy();
+                }
+            } catch (Exception $e) {
+                // Fallback: If database connection fails, allow request
+            }
         }
     }
 
