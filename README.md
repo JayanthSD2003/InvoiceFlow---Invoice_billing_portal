@@ -8,7 +8,7 @@
 ![Tested with Thunder Client](https://img.shields.io/badge/Tested%20with-Thunder_Client-732cf5?style=for-the-badge&logo=thunder-client&logoColor=white)
 ![Made with VS Code](https://img.shields.io/badge/Made%20with-VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
----
+
 
 ### **Supporting Tools**
 
@@ -178,5 +178,5 @@ This project was developed following industry-standard methodologies to ensure s
 ---
 
 ## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache-2.0 License - see the [LICENSE](LICENSE) file for details.
 
